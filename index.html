@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormValidation</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div id="content"> 
+    <label for="myform" id="myform">
+        Name: <input type="text" id="name" onclick="validate()"
+        name="full_name" />
+        phone Number: <input type="text" id="fone" onclick="validate()" name="phone_number" />
+        Email: <input type="text" id="eml" onclick="validate()" name="email_adress" />
+        Message:   <textarea id="msg_text" name="message" rows="6" cols="35"></textarea>
+        <button id="subt" >Submit</button>
+    </div>
+      </label>
+        <script type="text/javascript">
+        function validate ()
+        {
+      let name = document.getElementById ("name");
+      let phone_number = document.getElementById ("fone");
+      let email_adress = document.getElementById ("eml");
+      let msg_text = document.getElementById ("msg");
+      let Submit = document.getElementById ("subt");
+        
+      if (name.value == "" || phone_number.value == "" || email_adress.value == "")
+      {
+        alert("You must fill all section in the form");
+        return false;
+      }
+      else{
+      return true;
+      }
+        }
+    </script>
+</body>
+</html>

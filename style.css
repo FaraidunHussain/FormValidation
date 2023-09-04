@@ -1,0 +1,27 @@
+#content{
+    width: 280px;
+    height: auto;
+    padding: 20px;
+    position: relative;
+    background-color: azure;
+}
+#name, #fone, #eml {
+width: 250px;
+height: 20px;
+color: rgb(18, 18, 19);
+margin: 5px 0px;
+}
+#msg {
+width: 150px;
+height: 250px;
+display: block;
+text-align: start;
+color: rgb(18, 18, 19);
+margin: 5px 0px;
+}        
+#subt{
+width: 100px;
+height: 20px;
+margin-top: 15px;
+color: rgb(28, 31, 32);
+} 
